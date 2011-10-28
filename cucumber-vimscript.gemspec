@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
 
   s.rubygems_version = ">= 1.6.1"
-  s.files            = Dir['lib/**/*.rb']
+  s.files            = Dir['lib/**/*.rb', 'LICENSE', '*.md']
   s.rdoc_options     = ['--charset=UTF-8']
   s.require_path     = 'lib'
 end
