@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'cucumber', '>= 1.0.2'
   s.add_dependency 'vimrunner'
 
+  s.add_development_dependency 'rake'
+
   s.rubygems_version = ">= 1.6.1"
   s.files            = Dir['lib/**/*.rb']
   s.rdoc_options     = ['--charset=UTF-8']
