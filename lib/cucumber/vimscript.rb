@@ -41,7 +41,6 @@ end
 
 When /^I save$/ do
   @vim.write
-  @vim.wait_until_ready
 end
 
 Then /^the file "([^"]*)" should contain "([^"]*)"$/ do |filename, text|
