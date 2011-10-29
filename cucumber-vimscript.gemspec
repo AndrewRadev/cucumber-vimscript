@@ -1,8 +1,8 @@
-# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/cucumber/vimscript/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'cucumber-vimscript'
-  s.version     = '0.0.1'
+  s.version     = Cucumber::Vimscript::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew Radev"]
   s.email       = ['andrey.radev@gmail.com']
