@@ -4,12 +4,11 @@ require 'fileutils'
 require 'vimrunner/runner'
 
 Around do |scenario, block|
-  original_dir = FileUtils.getwd
   Dir.mktmpdir do |tmpdir|
-    FileUtils.cd tmpdir
-    block.call
+    Dir.chdir(tmpdir) do
+      block.call
+    end
   end
-  FileUtils.cd original_dir
 end
 
 After do
